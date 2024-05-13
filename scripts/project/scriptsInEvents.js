@@ -3,7 +3,7 @@
 
 const scriptsInEvents = {
 
-	async _btns_Event6_Act2(runtime, localVars)
+	async _btns_Event6_Act5(runtime, localVars)
 	{
 		const queryParams = new URLSearchParams(window.location.search)
 		const token = queryParams.get('token');
