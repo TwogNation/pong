@@ -3,7 +3,7 @@
 
 const scriptsInEvents = {
 
-	async _btns_Event6_Act5(runtime, localVars)
+	async _btns_Event7_Act5(runtime, localVars)
 	{
 		const queryParams = new URLSearchParams(window.location.search)
 		const token = queryParams.get('token');
@@ -46,12 +46,12 @@ const scriptsInEvents = {
 		
 	},
 
-	async _btns_Event26_Act4(runtime, localVars)
+	async _btns_Event27_Act4(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.close();
 	},
 
-	async _btns_Event26_Act5(runtime, localVars)
+	async _btns_Event27_Act5(runtime, localVars)
 	{
 		window.parent.postMessage("WebSocketClosed", "*");
 	},
@@ -62,7 +62,7 @@ const scriptsInEvents = {
 		window.parent.postMessage({ type: 'score', message: 'Player scored a point' }, '*');
 	},
 
-	async Game_Event4_Act1(runtime, localVars)
+	async Game_Event3_Act1(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.onMessage = (event) => {
 		    if (event.data.startsWith('s:')) {
